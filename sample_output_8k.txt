@@ -1,0 +1,69 @@
+Overriding: out_dir = out-shakespeare-char-cpu-8k
+Overriding: device = cpu
+Overriding: num_samples = 3
+Overriding: max_new_tokens = 500
+Overriding: seed = 1337
+number of parameters: 2.67M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+Sometime to be rooth, for father me:
+The patients the will of your bids;
+Think you the burn's much do such me of my death?
+
+Second Citizen:
+And not say when the pentent of the own of queen?
+
+CLARENCE:
+Now me, my lords, I am not set be the wind to service.
+
+COMINIUS:
+Peace, to bloody, but unto our worsting;
+What's him better me for the laces upon.
+
+LUCIO:
+I do you have have venget we are your kindred?
+
+ISABELLA:
+My presents than us piteous passure upon him.
+
+AUTOLYCUS:
+My lord?
+
+Second Citizen:
+A
+---------------
+
+Live that poor no sceives for hate on this will
+change my grace with the king, and all them,
+And enforce of itself a party as of part on my speak?
+
+POLIXENES:
+I have he this day up mean of before Rome;
+Where we shall go me to less you. Why! fair this safe,
+To you to are the rezinate of the person her of makes;
+But then for our dost of enough me garly.
+
+AUTOLYCUS:
+Why, send me that your shall not to thou that
+I am condemt.' as her cause him the foe;
+And he thy heart loveous duke her should winds
+
+---------------
+
+Now not not all mock these law and queen'd up a fare,
+Last is themself for the back to the Rome
+Along to the law-for the King Hasting gate with of do freath!
+And look word the Lord Hastings? when well not
+these put the bisest of laces are at posting.
+
+WARWICK:
+Alas, if not know your callen of a while head,
+And would approceman, these camination.
+
+CORIOLANUS:
+There sorrow, be none as further us to thy hand;
+Which sin, what I say be my sistress servents sold.
+
+Servant:
+O, by no, but as it thy layo
+---------------
