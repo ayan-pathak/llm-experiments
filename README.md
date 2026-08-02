@@ -18,6 +18,13 @@ Two runs of the same 2.67M-parameter model, differing only in training length.
 
 Starting loss for both was 4.1993 — random guessing across a 65-character vocabulary.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="loss_curve_dark.png">
+  <img alt="Training and validation loss over 8000 iterations. Both fall steeply from 4.2, then diverge: training loss keeps dropping to 1.43 while validation loss bottoms out at 1.6074 at step 7250 and rises afterwards." src="loss_curve.png">
+</picture>
+
+Regenerate with `python scripts/plot_loss.py train_8k.log loss_curve`.
+
 ### The longer run peaked before it ended
 
 Validation loss bottomed out at step 7250 and got *worse* afterwards:
@@ -65,6 +72,32 @@ nonsense: `CLOUCESTER`, `GORCET`, `PAREET`. The longer run produces real, correc
 spelled characters — `CLARENCE`, `ISABELLA`, `AUTOLYCUS`, `POLIXENES`, `WARWICK`,
 `CORIOLANUS`, `Second Citizen` — and most individual words are real English. Sentences
 still don't mean anything, which is expected at this scale.
+
+## Prompting the model
+
+[scripts/talk.py](scripts/talk.py) loads the best checkpoint and continues whatever you
+type:
+
+```bash
+python scripts/talk.py
+python scripts/talk.py --temperature 0.6 --tokens 300
+```
+
+It is **not** a chatbot — it was trained only to predict the next character, so it
+continues your text rather than answering it. Give it a speaker name or the start of a
+line:
+
+```
+you> ROMEO:
+
+Second Grent:
+I shall faith, and cause to the dost bring of you.
+Come, my name? I am but dring depossition
+```
+
+The model knows only the 65 characters in its training data; anything else (digits,
+most punctuation) is dropped with a warning. `--temperature` controls randomness:
+below 0.8 is more repetitive and safer, above is wilder.
 
 ## Configuration
 
