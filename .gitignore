@@ -1,0 +1,19 @@
+# Virtual environment — never commit (700+ MB, machine-specific)
+.venv/
+
+# nanoGPT is cloned from upstream and has its own git history.
+# We keep only our config in configs/ and let README explain the clone step.
+nanoGPT/
+
+# Dataset binaries and model checkpoints are large and regenerable
+*.bin
+*.pkl
+*.pt
+out-*/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env

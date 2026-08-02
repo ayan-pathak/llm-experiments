@@ -1,0 +1,56 @@
+Overriding: out_dir = out-shakespeare-char-cpu
+Overriding: device = cpu
+Overriding: num_samples = 3
+Overriding: max_new_tokens = 500
+Overriding: seed = 1337
+number of parameters: 2.67M
+Loading meta from data\shakespeare_char\meta.pkl...
+
+See:
+Be I king your say's fathers of up and the could
+whose thy death with wrance be made thring ded,
+Which from father the be breather be her,
+And was when the penteritest beson's anque her untire,
+Bress my and by my granter the take the with these
+thy stain feath the rows of like and thou seeds.
+
+CLOUCESTER:
+Now love
+To prove conters, was upon off this gove but him.
+
+Fird:
+Thet were a warl, and All not more shath feather thence
+Mpine, as a come unleas hour seect you to begace of thee
+If she co
+---------------
+
+Lid thy heave mades ex
+One of that on to the shall how I clieds, but the know,
+And all libly and eye be insweak thou but himse
+to man one the male hearn hear how hear from the bear
+Owathon be and Rommble unour wing be of be of hear,
+Which the dood I wearn, he say to and the resignt.
+Thou doter bather of my as sirny tone, the prasece.
+
+DUKE OF GORCET:
+Are were so; thou sent mest a common me hear
+Of me, for we with coursh makes him causon,
+I well hen laid to my hearth with them mone so be:
+Sold ho
+---------------
+
+Not not not all mock and fill have queit's up of
+Have mast his sols? And parence for ling by my
+All sice thes day of the can hear it lown in the mode
+Of of the clostion we the mehtrent to un wroved a dight.
+
+PAREET:
+Rome seet I slave have at of make a dretter
+Thou and so the than row with on made into was I'll am
+Which would our and was inaties.
+
+CATIO:
+And as whose, where my seatess up of your sin,
+Claws in he suins will give fair pessed and merce,
+Then and surnters hath the was basting it thy 
+---------------
