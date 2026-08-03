@@ -1,0 +1,60 @@
+number of parameters: 2.67M
+checkpoint : out-shakespeare-char-cpu-8k (step 7250, best val loss 1.6074)
+model      : 6 layers, 192 embd, 65 vocab
+input      : 'ROMEO: But soft, what light through yonder' (42 characters)
+
+self-check : final-layer lens vs model's own output -> OK (both predict '_')
+
+pos  char  next    layer 1  layer 2  layer 3  layer 4  layer 5  layer 6  first=  stays=
+---------------------------------------------------------------------------------------
+  0     R     O    C  12%   D  10%   D   7%  [I   7%]  o  16%   I  15%        4       6
+  1     O     M   [M  34%]  T  24%   M  33%   M  31%   M  33%   M  46%        1       3
+  2     M     E    _  16%   _  19%   _  13%   e  19%  [E  62%]  E  99%        5       5
+  3     E     O    N  50%   N  36%   R  41%   R  58%  [O  42%]  O  99%        5       5
+  4     O     :    N  40%  [:  49%]  :  78%   :  91%   :  97%   : 100%        2       2
+  5     :     _  [\n  86%] \n  70%  \n  66%  \n  77%  \n  97%  \n 100%        1       1
+  6     _     B    a  22%   a  25%   I  29%   I  29%   I  14%  [t  13%]       6       6
+  7     B     u    E  21%  [u  18%]  u  21%   u  34%   u  27%   u  27%        2       2
+  8     u     t    s  19%  [t  27%]  t  29%   t  68%   t  83%   t  84%        2       2
+  9     t     _    h  41%   h  29%   h  47%   h  32%  [_  77%]  _  54%        5       5
+ 10     _     s    w  25%   w  18%   w  13%   i  17%   i  16%  [t  13%]       6       6
+ 11     s     o    o  37%   o  40%   o  30%   o  30%   o  23%  [h  25%]       6       6
+ 12     o     f    o  33%   o  29%   o  19%  [_  18%]  _  43%   _  47%        4       4
+ 13     f     t    f  92%   f  71%   f  67%   f  45%   e  30%  [t  92%]       6       6
+ 14     t     ,    e  19%   e  45%   e  38%  [_  28%]  _  29%   _  42%        4       4
+ 15     ,     _   [_  65%]  _  81%   _  78%   _  84%   _  87%   _  90%        1       1
+ 16     _     w    a  45%   a  44%   a  38%   a  34%   a  21%  [t  14%]       6       6
+ 17     w     h   [h  44%]  i  25%   i  25%   h  37%   h  50%   h  63%        1       4
+ 18     h     a    y  32%   i  26%   y  35%   i  53%  [a  34%]  a  34%        5       5
+ 19     a     t    l  23%  [t  23%]  t  35%   t  95%   t  97%   t 100%        2       2
+ 20     t     _    h  27%  [_  47%]  _  47%   _  40%   _  72%   _  77%        2       2
+ 21     _     l   [s  21%]  s  19%   w  22%   w  22%   s  18%   s  13%        1       5
+ 22     l     i    l  41%   l  36%   l  31%  [o  44%]  i  36%   o  35%        4       6
+ 23     i     g    v  47%   s  21%   s  31%   s  27%   v  40%  [k  36%]       6       6
+ 24     g     h    g  70%   g  37%  [h  30%]  h  84%   h  90%   h  98%        3       3
+ 25     h     t   [t  72%]  t  81%   t  83%   t  81%   t  96%   t  99%        1       1
+ 26     t     _    y  46%  [_  50%]  _  53%   _  45%   _  58%   _  58%        2       2
+ 27     _     t    w  20%   s  16%   s  22%   o  20%  [t  17%]  t  17%        5       5
+ 28     t     h   [h  88%]  h  86%   h  83%   h  79%   h  70%   h  70%        1       1
+ 29     h     r   [e  48%]  e  56%   e  42%   e  56%   e  72%   e  65%        1       1
+ 30     r     o   [e  21%]  o  29%   e  43%   e  64%   e  76%   e  44%        1       3
+ 31     o     u   [u  62%]  u  64%   u  85%   u  53%   u  39%   u  44%        1       1
+ 32     u     g    r  25%   n  31%  [g  24%]  g  54%   g  89%   g  95%        3       3
+ 33     g     h    g  55%  [h  42%]  h  79%   h  97%   h  99%   h 100%        2       2
+ 34     h     _    t  30%   t  49%   t  70%  [_  52%]  _  72%   _  73%        4       4
+ 35     _     y    a  16%   a  23%   a  18%   a  24%  [t  13%]  t  15%        5       5
+ 36     y     o   [o  90%]  o  92%   o  87%   o  95%   o  96%   o  95%        1       1
+ 37     o     n   [u  88%]  u  90%   u  89%   u  94%   u  95%   u 100%        1       1
+ 38     n     d   [d  27%]  g  22%   _  31%   _  35%   d  31%   d  44%        1       5
+ 39     d     e   [_  61%]  _  72%   _  70%   _  74%   _  41%   _  31%        1       1
+ 40     e     r    m  52%  [r  40%]  r  35%   r  54%   r  68%   r  44%        2       2
+ 41     r     ?    e  28%   e  27%  [_  26%]  _  59%   _  33%   _  28%        3       3
+---------------------------------------------------------------------------------------
+[ ] = earliest layer whose top prediction already matches layer 6's.
+'_' = space.  Percentages are the model's confidence in that character.
+
+average first-agreement layer : 2.98 of 6
+average settle-for-good layer : 3.43 of 6
+positions that changed mind   : 7/42 agreed early, then drifted away again
+final layer correct next-char : 25/41 (61%)
+settle distribution           : layer 1: 9, layer 2: 8, layer 3: 5, layer 4: 4, layer 5: 8, layer 6: 8
